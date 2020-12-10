@@ -7,7 +7,7 @@ before_install:
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 addons:
-    sonarqube:
+    sonarcloud:
         organization: "anaselh10" #Here must be the name of organization
         token:
             secure: 60ccad1bda2036a284fc8eaadc924ed9d454b9eb #Token
