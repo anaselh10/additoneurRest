@@ -6,6 +6,7 @@ before_install:
   - chmod +x mvnw
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=anaselh
 addons:
     sonarcloud:
         organization: "anaselh10" #Here must be the name of organization
